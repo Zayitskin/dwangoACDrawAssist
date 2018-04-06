@@ -7,7 +7,7 @@ YOU MUST HAVE PYGAME INSTALLED!<br>
 Pygame is used both as a GUI for the script as well as the backend, and is therefore very required.<br>
 <code>pip install pygame</code><br>
 should be suffecient for most systems. The program is controlled with the arrow keys and enter. By default, it will look for png files in a subfolder called assets. This can be changed by editing the line 13:<br>
-<code>for img in glob.glob("assets\\*.png"):</code><br>
+<code>for img in glob.glob("assets\\\\*.png"):</code><br>
 change "assets\\" to any subfolder you like, or remove it to search the directory that the script is in.<br>
 change ".png" to your desired filetype that is also within the following:<br>
 JPG, PNG, GIF (non-animated), BMP, PCX, TGA (uncompressed), TIF, LBM (and PBM), PBM (and PGM and PPM), and XPM.<br>
