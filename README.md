@@ -4,7 +4,7 @@ Python scripts to assist with using the pbn (paint by number) part of dwangoAC's
 All of my scripts are in Python3. Sorry for any inconvience.<br>
 The first script is convert.py.<br>
 YOU MUST HAVE PYGAME INSTALLED!<br>
-Pygame is used both as a GUI for the script as well as the backend, and is therefor very required.<br>
+Pygame is used both as a GUI for the script as well as the backend, and is therefore very required.<br>
 <code>pip install pygame</code><br>
 should be suffecient for most systems. The program is controlled with the arrow keys and enter. By default, it will look for png files in a subfolder called assets. This can be changed by editing the line 13:<br>
 <code>for img in glob.glob("assets\\*.png"):</code><br>
