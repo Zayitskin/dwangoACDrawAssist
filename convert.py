@@ -84,7 +84,11 @@ class Tool():
         img = self.images[self.imgs[self.index]]
         colors = {}
         for x in range(img.get_width()):
+            if x + self.xoff < 0 or x + self.xoff > 123:
+                continue
             for y in range(img.get_height()):
+                if y + self.yoff < 0 or y + self.yoff > 92:
+                    continue
                 c = img.get_at((x, y))
                 if c.a != 255:
                     continue
