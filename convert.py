@@ -113,7 +113,7 @@ class Tool():
             s = key + " "
             for pix in colors[key]:
                 s += str(pix[0]) + "," + str(pix[1]) + ";"
-                if len(s) > 485:
+                if len(s) > 485 and pix != colors[key][-1]:
                     if s.endswith(";"):
                         s = s[:-1]
                     f.write(s)
